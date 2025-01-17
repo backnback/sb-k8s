@@ -12,6 +12,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
+        
         return "home";
 
     }
@@ -19,7 +20,7 @@ public class HomeController {
     @GetMapping("/jwtSecretKey")
     @ResponseBody
     public String showJwtSecretKey() {
-        
+
         return jwtSecretKey;
     }
 }
